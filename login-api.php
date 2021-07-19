@@ -1,4 +1,5 @@
-//////////// Login Api /////////////
+<?php
+/////////// Login Api /////////////
 add_action( 'rest_api_init', 'register_api_hooks' );
 
 function register_api_hooks() {
@@ -46,3 +47,4 @@ function login($request){
 		wp_send_json_success( $return );
 	}
 }
+?>
